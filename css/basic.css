@@ -43,27 +43,6 @@ body{
   padding-left: 10px;
   padding-right: 10px;
 }
-.btn-animate {
-  position: relative;
-}
-.btn-animate-underline {
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 100%;
-    bottom: 0;
-    z-index: 1;
-    height: 4px;
-    background-color: #90cf5b;
-    transition: 0.5s ease;
-  }
-  &:hover {
-    &::before {
-      right: 0;
-    }
-  }
-}
 .line{
   cursor: default;
 }
@@ -139,20 +118,6 @@ body{
   overflow: hidden;
   margin: 0 auto;
 }
-.color_changing_btn{
-  position: fixed;
-  right: 0;
-  bottom: 100px;
-  width: 50px;
-  height: 50px;
-  background-color: #fff;
-  border: 2px #cecece solid;
-}
-.color_changing_btn_icon{
-  width: 40px;
-  height: 40px;
-  margin: 5px 5px;
-}
 @media screen and (max-width:1226px) {
   .container{
     width: 100%;
@@ -163,7 +128,7 @@ body{
     width: auto;
   }
   .line-list{
-    left: -140px;
+    left: 0px;
     width: 100vw;
     min-width: 690px;
     height: 30vh;
